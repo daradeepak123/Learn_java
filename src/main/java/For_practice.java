@@ -21,8 +21,6 @@ public class For_practice {
 			
 			System.out.println(i);
 		}
-			
-
 		for (int i=0;i<j;)
 
 		{
