@@ -14,7 +14,6 @@ public class Contition_learn {
 		{
 			System.out.println("catprnter will work for 500 above");
 			
-			
 		}
 		
 		
