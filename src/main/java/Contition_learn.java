@@ -12,7 +12,7 @@ public class Contition_learn {
 		
 		if (me<500)
 		{
-			System.out.println("catprnter will work for 500 above");
+			System.out.println("catprnter will work for 500 above ");
 			
 		}
 		
