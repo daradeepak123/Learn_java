@@ -37,6 +37,9 @@ public class Learn_Iteratios1 {
 	    AL.add("GN");
 	    AL.add("Wasap");
 	    
+		   System.out.println(AL);
+	   
+	    
 	    Iterator<String> val=AL.iterator();
 	    System.out.println(AL.size());
 	    
