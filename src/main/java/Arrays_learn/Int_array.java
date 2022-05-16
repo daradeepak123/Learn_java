@@ -1,11 +1,33 @@
 package Arrays_learn;
 
+import java.util.Iterator;
+
+import javax.mail.search.IntegerComparisonTerm;
+
 public class Int_array {
+	
+	
+	private static int a;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a[]= {1,5,25,32,89,43};
+		 int a[]= {1,5,25,32,89,43};
+		
+		
+		
+		
+		for (int z: a)
+		{
+			
+			if(z==25)
+			{
+				break;
+			}
+			System.out.println(z);
+		}
+		
+		
 		
 		
 		System.out.println("Value present at position 3 is--->  "+a[2]);

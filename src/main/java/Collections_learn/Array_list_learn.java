@@ -12,7 +12,11 @@ public class Array_list_learn {
 		list.add("Ravi");//Adding object in arraylist  
 		list.add("Vijay");  
 		list.add("Ravi");  
-		list.add("Ajay");  
+		list.add("Ajay"); 
+		
+		list.remove(0);
+		list.add("hello");
+		
 		//Traversing list through Iterator  
 		Iterator itr=list.iterator();  
 		while(itr.hasNext()){  
