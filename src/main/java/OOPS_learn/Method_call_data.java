@@ -10,17 +10,17 @@ public class Method_call_data {
 	String Desig;
 	int age;
 	
-	void setdata_new(int eid,String ename, int sal, String disg, int ag)
+	int setdata_new(int eid,String ename, int sal, String disg, int ag)
 	{
 		
-		age=ag;
+		age=ag+1;
 		empid=eid;
 		emp_name=ename;
 		
 		Desig=disg;
 		salary=sal;
 		
-		
+		return ag;
 		
 		
 	}
@@ -43,6 +43,8 @@ public class Method_call_data {
 		Method_call_data ob=new Method_call_data();
 		ob.setdata_new(101, "HEllo", 2000000, "Test engineer", 25);
 		ob.display();
+		
+		int g=ob.setdata_new(101, "HEllo", 2000000, "Test engineer", 25);
 		
 		Method_call_data ob1=new Method_call_data();
 		ob1.setdata_new(102, "Hi", 2000000, "Test engineer", 25);
