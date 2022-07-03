@@ -19,7 +19,15 @@ public class Linked_list_learn {
 	      list.add("B");
 	      list.add("C");
 	      list.add("D");
+	      list.add("A");
+	      list.add("B");
+	      list.add("C");
+	      list.add("D");
 	      List<String> list1 = new LinkedList<>();
+	      list1.add("A");
+	      list1.add("B");
+	      list1.add("C");
+	      list1.add("D");
 	      list1.add("A");
 	      list1.add("B");
 	      list1.add("C");
@@ -28,9 +36,9 @@ public class Linked_list_learn {
 	      list1.remove(0);
 	      
 	     
-	      System.out.println(list);
+	      System.out.println("AL--->"+list);
 	      
-	      System.out.println(list1);
+	      System.out.println("LL--->"+list1);
 	      
 	      for (String lst: list)
 	      {
