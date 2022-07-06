@@ -30,6 +30,7 @@ public class Array_list_learn {
 	List<Integer> li=new ArrayList<Integer>();
 	
 	li.add(100);
+	li.add(20);
 	
 	
 

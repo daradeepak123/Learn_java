@@ -1,6 +1,8 @@
 package Access_modifiers_learn;
 
-public class Access_1  {
+import Collections_learn.Array_list_learn;
+
+public class Access_1  extends Array_list_learn{
 
 	
 	 static int a=20;
