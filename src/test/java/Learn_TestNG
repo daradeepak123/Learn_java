@@ -2,7 +2,7 @@
 <suite parallel="false" name="Test_NG_learn">
   <test name="Test">
     <classes>
-      <class name="testNG_learn.NewTest"/>
+      <class name="testNG_learn.NewTest.java"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

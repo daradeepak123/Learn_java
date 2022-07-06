@@ -3,6 +3,15 @@ import java.util.ArrayList;
 import Access_modifiers_learn.Access_2;
 
 public class Arrays_learn {
+	
+	
+	public int abc;
+	
+	protected int b;
+	
+	private int c;
+	
+	int m;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

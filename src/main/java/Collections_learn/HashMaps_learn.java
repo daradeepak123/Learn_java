@@ -17,6 +17,7 @@ public class HashMaps_learn {
         map.put("sachin", 30);
         map.put("vaibhav", 20);
         map.put("vaibhav1", 20);
+        map.put("vishal", 10);
  
         
         System.out.println("Size of map is:- "+ map.size());

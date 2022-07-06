@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class String_new extends String_practice{
+public class String_new {
 	
 	@Test()
 	public void test2()
