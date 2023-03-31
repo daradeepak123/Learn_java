@@ -27,6 +27,9 @@ public class Learn_excel_ {
 		
 		//now print all the data present in the sheet
 		
+		String str=sht.getRow(0).getCell(0).toString();
+		System.out.println(str);
+		
 		Iterator<Row> itr=sht.iterator();
 		while (itr.hasNext())                 
 		{  

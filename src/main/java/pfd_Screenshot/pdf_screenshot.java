@@ -1,4 +1,4 @@
-package seliniumdemo;
+package pfd_Screenshot;
 
 import static org.junit.Assert.*;
 
