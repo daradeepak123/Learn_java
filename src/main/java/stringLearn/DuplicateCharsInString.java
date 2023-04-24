@@ -6,7 +6,7 @@ public class DuplicateCharsInString {
 		// TODO Auto-generated method stub
 		
 		
-		String str="HEllo This is duplicate string";
+		String str="HElloThisisduplicatestring";
 		
 		
 		

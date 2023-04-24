@@ -37,6 +37,37 @@
                 </suiteXmlFiles>
           </configuration>
    </plugin>
+   
+     <plugin>
+		<groupId>org.apache.felix</groupId>
+		<artifactId>maven-bundle-plugin</artifactId>
+		<configuration>
+		    <instructions>
+			<Bundle-SymbolicName>
+			    ${mail.bundle.symbolicName}
+			</Bundle-SymbolicName>
+			<Export-Package>
+			    ${mail.packages.export}
+			</Export-Package>
+			<Import-Package>
+			    ${mail.packages.import}
+			</Import-Package>
+			<Private-Package>
+			    ${mail.packages.private}
+			</Private-Package>
+			<DynamicImport-Package>
+			    *
+			</DynamicImport-Package>
+		    </instructions>
+		    <niceManifest>true</niceManifest>
+		</configuration>
+		<!--
+		    Since we don't change the packaging type to bundle, we
+		    need to configure the plugin to execute the manifest goal
+		    during the process-classes phase of the build life cycle.
+		-->
+		
+	    </plugin>
 
 </plugins>
 
@@ -115,9 +146,14 @@
 <artifactId>poi-ooxml</artifactId>
  <version>3.12</version>
  </dependency>
+ 
+ <dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.6.2</version>
+</dependency>
 
 <dependency>
-
 <groupId>com.relevantcodes</groupId>
  <artifactId>extentreports</artifactId> 
 <version>2.41.1</version>
@@ -162,5 +198,55 @@
 </dependency>
 
 </dependencies>
+
+
+
+ <properties>
+	<mail.version>1.6.2</mail.version>
+	<!-- like mail.version, but with underscores instead of dots -->
+	<mail.zipversion>1_6_2</mail.zipversion>
+	<mail.spec.version>1.6</mail.spec.version>
+	<activation-api.version>1.1</activation-api.version>
+	<!-- defaults that are overridden in mail module -->
+	<mail.extensionName>
+	    ${project.groupId}.${project.artifactId}
+	</mail.extensionName>
+	<mail.specificationTitle>
+	    ${project.groupId}.${project.artifactId}
+	</mail.specificationTitle>
+	<mail.implementationTitle>
+	    ${project.groupId}.${project.artifactId}
+	</mail.implementationTitle>
+	<mail.bundle.symbolicName>
+	    ${project.groupId}.${project.artifactId}
+	</mail.bundle.symbolicName>
+	<mail.packages.export>
+	    javax.mail.*; version=${mail.spec.version}
+	</mail.packages.export>
+	<mail.packages.import>
+	    javax.security.sasl;resolution:=optional,
+	    sun.security.util;resolution:=optional,
+	    *
+	</mail.packages.import>
+	<mail.packages.private>
+	    com.sun.mail.*
+	</mail.packages.private>
+	<mail.probeFile/>
+	<!-- for the osgiversion-maven-plugin -->
+	<hk2.plugin.version>2.0.0</hk2.plugin.version>
+	<javac.path>/opt/jdk1.7/bin/javac</javac.path>
+	<project.build.sourceEncoding>iso-8859-1</project.build.sourceEncoding>
+	<findbugs.threshold>
+	    High
+	</findbugs.threshold>
+	<findbugs.version>
+	    3.1.0
+	</findbugs.version>
+	<findbugs.skip>
+	    true
+	</findbugs.skip>
+	<findbugs.exclude/>
+        <copyright-plugin.version>1.46</copyright-plugin.version>
+    </properties>
 
 </project>

@@ -51,6 +51,7 @@ public class Write_excel {
 	            Cell cell = row.createCell(cellid++);
 	            cell.setCellValue((String)obj);
 	         }
+	         
 	      }
 	      //Write the workbook in file system
 	      FileOutputStream out = new FileOutputStream(new File("Writesheet.xlsx"));
