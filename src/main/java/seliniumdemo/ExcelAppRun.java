@@ -7,25 +7,25 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class ExcelAppRun {
 	
 	
 	WebDriver driver;
-	@Before
+	@BeforeClass
 	public void setUp() throws Exception {
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 	}
 
-	@After
+	@AfterClass
 	public void tearDown() throws Exception {
 	}
 
