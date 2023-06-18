@@ -32,11 +32,11 @@ public class Write_excel {
 	      //This data needs to be written (Object[])
 	      Map < String, Object[] > empinfo = new TreeMap < String, Object[] >();
 	      empinfo.put( "1", new Object[] { "EMP ID", "EMP NAME", "DESIGNATION" });
-	      empinfo.put( "2", new Object[] { "MLR01", "Hello", "Technical Manager" });
-	      empinfo.put( "3", new Object[] { "MLR02", "HI", "Proof Reader" });
-	      empinfo.put( "4", new Object[] { "MLR03", "Hey", "Technical Writer" });
-	      empinfo.put( "5", new Object[] { "MLR04", "None", "Technical Writer" });
-	      empinfo.put( "6", new Object[] { "MLR05", "Done", "Technical Writer" });
+	      empinfo.put( "2", new Object[] { "QT01", "Hello", "Technical Manager" });
+	      empinfo.put( "3", new Object[] { "QT02", "HI", "Proof Reader" });
+	      empinfo.put( "4", new Object[] { "QT03", "Hey", "Technical Writer" });
+	      empinfo.put( "5", new Object[] { "QT04", "None", "Technical Writer" });
+	      empinfo.put( "6", new Object[] { "QT05", "Done", "Technical Writer" });
 	      
 	      //Iterate over data and write to sheet
 	      Set < String > keyid = empinfo.keySet();

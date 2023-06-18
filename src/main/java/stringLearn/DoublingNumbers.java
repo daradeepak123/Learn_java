@@ -19,9 +19,20 @@ public class DoublingNumbers {
 					
 					break;
 				}
-				
-				
 			}
+			
+			StringBuffer sb=new StringBuffer(num);
+			String rev=sb.reverse().toString();
+			if(num.equals(rev))
+			{
+				System.out.println("this num is a palindrome " +num);
+			}
+			
+			
+			
+			
+			
+			
 		}
 		
 		
