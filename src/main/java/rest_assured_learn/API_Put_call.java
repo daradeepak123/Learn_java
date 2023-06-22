@@ -27,7 +27,7 @@ public class API_Put_call {
 	  //Request paylaod sending along with post request
 	  JSONObject requestParams=new JSONObject();
 	  
-	  requestParams.put("name","Suresh100 Infogain");
+	  requestParams.put("name","Suresh010101");
 	  requestParams.put("salary","500000");
 	  requestParams.put("age","31");
 	  
@@ -57,7 +57,7 @@ public class API_Put_call {
 	  //success code validation
 	 String successCode=response.jsonPath().get("SuccessCode");
 	  
-	System.out.println(successCode);
+	System.out.println("this is success code "+successCode);
 	  
 	 }
 	 

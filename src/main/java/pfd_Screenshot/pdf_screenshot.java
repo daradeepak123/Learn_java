@@ -126,7 +126,7 @@ public class pdf_screenshot {
 		doc.addSubject("Aded Screenshots");
 		
 		//ACCOUNT
-		driver.findElement(By.xpath("//*[@id=\"root\"]/main/div/div[2]/nav/div[8]/div[1]/a/div")).click();
+		driver.findElement(By.xpath("//*[@id='root']/main/div/div[2]/nav/div[8]/div[1]/a/div")).click();
 		Thread.sleep(2000);
 		srcShotPdf();
 		

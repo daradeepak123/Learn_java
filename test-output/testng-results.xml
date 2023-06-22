@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-14T09:59:28Z" name="Default suite" finished-at="2023-03-14T09:59:28Z" duration-ms="502">
+  <suite started-at="2023-06-03T04:59:49Z" name="Default suite" finished-at="2023-06-03T05:00:07Z" duration-ms="18085">
     <groups>
     </groups>
-    <test started-at="2023-03-14T09:59:28Z" name="Default test" finished-at="2023-03-14T09:59:28Z" duration-ms="502">
-      <class name="Learn_excel_">
-        <test-method signature="Learn_excel_new()[pri:0, instance:Learn_excel_@6f8e8894]" started-at="2023-03-14T15:29:28Z" name="Learn_excel_new" finished-at="2023-03-14T15:29:28Z" duration-ms="487" status="PASS">
+    <test started-at="2023-06-03T04:59:49Z" name="Default test" finished-at="2023-06-03T05:00:07Z" duration-ms="18085">
+      <class name="seliniumdemo.ExcelAppRun">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seliniumdemo.ExcelAppRun@791d1f8b]" started-at="2023-06-03T10:29:49Z" name="setUp" finished-at="2023-06-03T10:29:52Z" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Learn_excel_new -->
-      </class> <!-- Learn_excel_ -->
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:seliniumdemo.ExcelAppRun@791d1f8b]" started-at="2023-06-03T10:29:52Z" name="test" finished-at="2023-06-03T10:30:07Z" duration-ms="14984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seliniumdemo.ExcelAppRun@791d1f8b]" started-at="2023-06-03T10:30:07Z" name="tearDown" finished-at="2023-06-03T10:30:07Z" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seliniumdemo.ExcelAppRun -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
