@@ -17,6 +17,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Actions_Ex {
 
 	WebDriver d;
@@ -42,7 +44,7 @@ public class Actions_Ex {
 	}
 	@Test(priority = 2)
 	public void sort() {
-		d.findElement(By.xpath("//a[@href=\"http://jqueryui.com/sortable/\"]")).click();
+		d.findElement(By.xpath("//a[@href='http://jqueryui.com/sortable/']")).click();
 		d.switchTo().frame(0);
 		
 		//List <WebElement> lis = d.findElements(By.xpath("//ul[@id='sortable']/li"));
@@ -59,7 +61,7 @@ public class Actions_Ex {
 	}
 	@Test(priority = 3)
 	public void Resize() {
-		d.findElement(By.xpath("//a[@href=\"http://jqueryui.com/resizable/\"]")).click();
+		d.findElement(By.xpath("//a[@href='http://jqueryui.com/resizable/']")).click();
 		d.switchTo().frame(0);
 		ac.click(d.findElement(By.xpath("//div[@class='ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se']"))).clickAndHold().moveByOffset(0, 40).release().build().perform();
 		
@@ -67,8 +69,9 @@ public class Actions_Ex {
 	@BeforeTest
 	public void launc() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		 d = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		d = new ChromeDriver();
 		 d.get("https://jqueryui.com/droppable/");
 		d.manage().window().maximize();
 		
