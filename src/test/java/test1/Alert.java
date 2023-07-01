@@ -15,6 +15,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Alert {
 	
 	WebDriverWait wait;
@@ -48,7 +50,7 @@ public class Alert {
 		d.switchTo().alert().sendKeys("Hello Welcome");
 		d.switchTo().alert().dismiss();
 		
-	
+	//THis is test
 		
 	}
 	@Test(priority = 4)
@@ -62,8 +64,9 @@ public class Alert {
 	
 	@BeforeTest
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		 d = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup(); 
+		d = new ChromeDriver();
 		 d.get("https://demoqa.com/alerts");
 		d.manage().window().maximize();
 		

@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="rest_assured_learn.API_Put_call">
+      <class name="test1.Actions_Ex">
         <methods>
-          <include name="RegistrationSuccessful"/>
+          <include name="Resize"/>
+          <include name="close"/>
+          <include name="sort"/>
+          <include name="launc"/>
         </methods>
-      </class> <!-- rest_assured_learn.API_Put_call -->
+      </class> <!-- test1.Actions_Ex -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
