@@ -6,7 +6,6 @@
       <class name="test1.Alert">
         <methods>
           <include name="launch"/>
-          <include name="AlertVerify"/>
           <include name="waittext"/>
         </methods>
       </class> <!-- test1.Alert -->
