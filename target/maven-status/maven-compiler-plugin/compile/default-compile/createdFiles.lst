@@ -1,6 +1,7 @@
 stringLearn\StringArr.class
 screenshot_learn\ScrShot.class
 Arrays_learn\Int_array.class
+stringLearn\BasicString.class
 send_email\Send_email.class
 Collections_learn\Array_list_learn.class
 stringLearn\SentenceToWords.class
@@ -22,7 +23,9 @@ stringLearn\PrintWordsFromNumbers.class
 rest_assured_learn\API_Put_call.class
 mapLearn\MapLearn.class
 For_Offline.class
+stringLearn\LargestAndSmallestWord.class
 String_new.class
+stringLearn\StringRevWithSpaces.class
 screenshot_learn\Screenshot_normal.class
 OOPS_learn\Emp_example.class
 Open_cart\Open_cart_table.class
