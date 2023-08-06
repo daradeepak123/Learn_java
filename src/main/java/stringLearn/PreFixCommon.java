@@ -100,8 +100,8 @@ public class PreFixCommon {
 		String commonPrefix = findCommonPrefix(strings);
 		System.out.println("Common prefix: " + commonPrefix);
 		
-		System.out.println(pre());
-		common();
+//		System.out.println(pre());
+//		common();
 
 	}
 

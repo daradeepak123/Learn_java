@@ -2,34 +2,59 @@ package stringLearn;
 
 public class DuplicateCharsInString {
 
+
+
+	public static void dups()
+	{
+		String string1 = "Great responsibility";  
+		int count;  
+
+		//Converts given string into character array  
+		char string[] = string1.toCharArray();  
+
+		System.out.println("Duplicate characters in a given string: ");  
+		//Counts each character present in the string  
+		for(int i = 0; i <string.length; i++) {  
+			count = 1;  
+			for(int j = i+1; j <string.length; j++) {  
+				if(string[i] == string[j] && string[i] != ' ') {  
+					count++;  
+					//Set string[j] to 0 to avoid printing visited character  
+					string[j] = '0';  
+				}  
+			}  
+			//A character is considered as duplicate if count is greater than 1  
+			if(count > 1 && string[i] != '0')  
+				System.out.println(string[i] + " "+ count);  
+		}  
+
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
+		//dups();
+
 		String str="HElloThisisduplicatestring";
-		
-		
-		
-		for(int i=0;i<str.length();i++)
+
+		char ch[]=str.toCharArray();
+		int count=1;
+		for(int i=0;i<ch.length;i++)
 		{
-			int count =1;
-			for(int j=i+1;j<str.length();j++)
+			count=1;
+			for(int j=i+1;j<ch.length;j++)
 			{
-				if(str.charAt(i)==str.charAt(j) && str.charAt(j)!='*')
+				if(ch[i]==ch[j] & ch[i]!=' ')
 				{
 					count++;
-					String ch="*";
-					String old=String.valueOf(str.charAt(j));
-					str=str.replace(old, ch); 
+					ch[j]='0';
 				}
-				
 			}
-			if(count>1)
-			System.out.println("repeated char " + str.charAt(i) + " repeated for " + count);
+			if(count>1& ch[i]!='0')
+			{
+				System.out.println(ch[i]+" "+count);
+			}
+
 		}
-		
-		
-		System.out.println(str);
 	}
 
 }
