@@ -57,7 +57,7 @@ public class PHPTravel {
 		
 		driver.findElement(By.xpath("//*[@id=\"fadein\"]/div[10]/div[1]/table/tbody/tr[3]/td[3]")).click();
 		
-		
+		driver.quit();
 		
 	}
 	
