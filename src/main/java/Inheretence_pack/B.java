@@ -3,6 +3,15 @@ package Inheretence_pack;
 import org.testng.annotations.Test;
 
 public class B extends A{
+	private int zz=50;
+	public int getZz() {
+		return zz;
+	}
+
+	public void setZz(int zz) {
+		this.zz = zz;
+	}
+	
 	
 	int c;
 	int d;
@@ -33,5 +42,7 @@ public class B extends A{
 		
 		
 	}
+
+	
 
 }
