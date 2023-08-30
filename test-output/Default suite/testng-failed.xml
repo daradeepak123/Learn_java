@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gridLearn.GridTrail">
+      <class name="winHandles.WindowHandeling">
         <methods>
-          <include name="testGrid"/>
+          <include name="launch"/>
+          <include name="tstWindowHandle"/>
         </methods>
-      </class> <!-- gridLearn.GridTrail -->
+      </class> <!-- winHandles.WindowHandeling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

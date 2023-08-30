@@ -11,7 +11,10 @@ public class A {
 		System.out.println(a+b);
 	}
 
-	
+	void classA()
+	{
+		System.out.println(a+b);
+	}
 
 
 }
