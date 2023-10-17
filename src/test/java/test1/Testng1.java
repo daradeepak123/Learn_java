@@ -51,8 +51,8 @@ public class Testng1 {
 	public void browsersetup() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\eclipse-workspace\\AutomationTesting\\drivers\\chromedriver.exe");
 		 d = new ChromeDriver();
-		 d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 d.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS );
+		 d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 d.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		 d.get("https://jqueryui.com/menu/");
 			d.manage().window().maximize();
 	}

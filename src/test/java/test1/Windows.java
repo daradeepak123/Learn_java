@@ -54,7 +54,7 @@ public class Windows {
 		 d = new ChromeDriver();
 		 d.get("https://demoqa.com/browser-windows");
 		d.manage().window().maximize();
-		d.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		parent = d.getWindowHandle();
 	}
 }

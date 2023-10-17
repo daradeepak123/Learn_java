@@ -4,14 +4,14 @@
 	<test name="Test2">
 		<classes>
 			<class name="parallelExecutionLearn.GoogleTest" />
-			<!-- class name="parallelExecutionLearn.PHPTravel" /-->
+			<class name="parallelExecutionLearn.PHPTravel" />
 			<class name="parallelExecutionLearn.OrangeHRMApp" />
 		</classes>
 	</test> <!-- Test -->
 	<test name="Test1">
 		<classes>
 			<class name="parallelExecutionLearn.GoogleTest" />
-			<!-- class name="parallelExecutionLearn.PHPTravel" /-->
+			<class name="parallelExecutionLearn.PHPTravel" />
 			<class name="parallelExecutionLearn.OrangeHRMApp" />
 		</classes>
 	</test> <!-- Test -->
