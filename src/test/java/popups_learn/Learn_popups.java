@@ -39,7 +39,8 @@ public void popup_learn()
 	profiles.put("managed_default_contetn-settings",contetnsettings);
 	prefs.put("profile",profiles);
 	//options.expermentaloptions("prefs", prefs);
-	option.getExperimentalOption("prefs");
+	//option.getExperimentalOption("prefs");
+	option.setExperimentalOption("prefs",prefs);
 
 }
 	

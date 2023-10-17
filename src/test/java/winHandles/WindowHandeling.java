@@ -1,5 +1,6 @@
 package winHandles;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -9,23 +10,30 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class WindowHandeling {
 	
-	WebDriver d;
+	static WebDriver d;
 	String parent;
 	String second;
 	
 	@BeforeTest
 	public void launch() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+			
 		 d = new ChromeDriver();
 		 d.get("https://the-internet.herokuapp.com/");
 		d.manage().window().maximize();
-		d.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		parent = d.getWindowHandle();
 	}
 	
@@ -44,8 +52,12 @@ public class WindowHandeling {
 		Set<String> wins=d.getWindowHandles();
 		for(String s:wins)
 		{
+			if(!parent.equals(s))
+			{
 			d.switchTo().window(s);
+			System.out.println(d.getCurrentUrl());
 			d.close();
+			}
 		}
 		d.switchTo().window(parent);
 	}

@@ -30,7 +30,7 @@ public class DateTimePicker {
 		
 		Thread.sleep(4000);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10); // 10-second explicit wait
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10-second explicit wait
 
 		WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@name='depart'])[1]")));
 		//driver.findElement(By.xpath("(//input[@name='depart'])[1]")).click();
