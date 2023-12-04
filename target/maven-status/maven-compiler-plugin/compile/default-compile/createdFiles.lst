@@ -43,9 +43,11 @@ PrintClass.class
 stringLearn\DuplicateCharsInString.class
 Arrays_learn\String_array.class
 Exceptions_learn\UncheckedExcepitions_learn.class
+dataBaseWorkOut\SQLConnectionQuery.class
 seliniumdemo\ExcelAppRun.class
 Collections_learn\Linked_list_learn.class
 stringLearn\SimpleString.class
+sel_Excel\ReadCreds.class
 screenshot_learn\Screenshot_full.class
 stringLearn\DoublingNumbers.class
 Inheretence_pack\Implement_class.class
@@ -65,6 +67,7 @@ stringLearn\DuplicatesStringHashMap.class
 OOPS_learn\Method_overLoading_new.class
 stringLearn\PreFixCommon.class
 stringLearn\RepeatingNumbers.class
+sel_Excel\SelDataInject.class
 stringLearn\PrintWordsFromNumbersss.class
 stringLearn\SpecialCharsAlphaNumString.class
 constructors_learn\Con_learn.class
@@ -75,6 +78,7 @@ Arrays_learn\Remove_duplicateArrays.class
 pfd_Screenshot\pdf_screenshot.class
 OOPS_learn\Two_Mains.class
 qtLearning\DigitstoWords.class
+stringLearn\RemoveSpecialCharecters.class
 stringLearn\StringMethods.class
 loopsLearn\TriangleStars.class
 screenshot_learn\Screenshot_element.class

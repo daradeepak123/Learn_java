@@ -51,7 +51,7 @@ public class Excel_run_apps {
 			driver.findElement(By.xpath(sheet.getRow(i).getCell(4).getStringCellValue())).click();
 			if(driver.findElement(By.xpath(sheet.getRow(i).getCell(7).getStringCellValue())).isDisplayed()) {
 				System.out.println("Login success");
-				sheet.getRow(i).createCell(8).setCellValue("LOgin SUccesss");
+				sheet.getRow(i).createCell(8).setCellValue("LOgin SUcce");
 				FileOutputStream out = new FileOutputStream(new File("Writesheet.xlsx"));
 			      wb.write(out);
 			      out.close();
@@ -59,7 +59,7 @@ public class Excel_run_apps {
 			
 			
 		}
-		
+		driver.quit();
 		
 		
 		

@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-17T16:50:12 IST" name="Default suite" finished-at="2023-10-17T16:50:26 IST" duration-ms="13768">
+  <suite started-at="2023-12-04T21:53:19 IST" name="Default suite" finished-at="2023-12-04T21:53:21 IST" duration-ms="1847">
     <groups>
     </groups>
-    <test started-at="2023-10-17T16:50:12 IST" name="Default test" finished-at="2023-10-17T16:50:26 IST" duration-ms="13768">
-      <class name="winHandles.WindowHandeling">
-        <test-method is-config="true" signature="launch()[pri:0, instance:winHandles.WindowHandeling@6f1de4c7]" started-at="2023-10-17T16:50:12 IST" name="launch" finished-at="2023-10-17T16:50:17 IST" duration-ms="4914" status="PASS">
+    <test started-at="2023-12-04T21:53:19 IST" name="Default test" finished-at="2023-12-04T21:53:21 IST" duration-ms="1847">
+      <class name="dataBaseWorkOut.SQLConnectionQuery">
+        <test-method signature="sqlExecution()[pri:0, instance:dataBaseWorkOut.SQLConnectionQuery@77847718]" started-at="2023-12-04T21:53:19 IST" name="sqlExecution" finished-at="2023-12-04T21:53:21 IST" duration-ms="1811" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="tstWindowHandle()[pri:0, instance:winHandles.WindowHandeling@6f1de4c7]" started-at="2023-10-17T16:50:17 IST" name="tstWindowHandle" finished-at="2023-10-17T16:50:26 IST" duration-ms="8827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tstWindowHandle -->
-      </class> <!-- winHandles.WindowHandeling -->
+        </test-method> <!-- sqlExecution -->
+      </class> <!-- dataBaseWorkOut.SQLConnectionQuery -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
