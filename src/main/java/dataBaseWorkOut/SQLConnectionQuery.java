@@ -19,12 +19,12 @@ public class SQLConnectionQuery {
 	public void sqlExecution()
 	{
 		try {
-		Connection con=DriverManager.getConnection("jdbc:sqlserver://sql5104.site4now.net","DB_a9dea1_n4602_1_admin","secure*12");
-		Statement stm=con.createStatement();
-		ResultSet rs=stm.executeQuery("select * from Country");
+		Connection con=DriverManager.getConnection("jdbc:sqlserver://sql5106.site4now.net","DB_aa2489_n4605_1_admin","secure*12");
+		Statement stm=con.createStatement();  //sql5106.site4now.net  //sql5104.site4now.net
+		ResultSet rs=stm.executeQuery("select * from db_aa2489_n4605_1.. Currency c \r\n"
+				+ "inner join  Country cc on cc.id=c.id");
 		ResultSetMetaData md = rs.getMetaData();
 		int columns = md.getColumnCount();
-		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
 		List <List<Object>> listt=new ArrayList<List<Object>>();
 		while(rs.next())
 		{
@@ -38,19 +38,7 @@ public class SQLConnectionQuery {
 		{
 			System.out.println(o);
 		}
-		while (rs.next()) {
-			HashMap<String, Object> row = new HashMap<String, Object>(columns);
-			for (int i = 1; i <= columns; ++i) {
-			row.put(md.getColumnName(i), rs.getObject(i));
-			}
-			list.add(row);
-			}
-
-
-//		for(int i=0;i<list.size();i++)
-//		{
-//			System.out.println(list.get(i));
-//		}
+	
 		con.close();
 		}
 		catch(SQLException s)

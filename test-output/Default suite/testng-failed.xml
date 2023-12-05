@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="winHandles.WindowHandeling">
+      <class name="parallelExecutionLearn.OrangeHRMApp">
         <methods>
-          <include name="launch"/>
-          <include name="tstWindowHandle"/>
+          <include name="dPicker"/>
         </methods>
-      </class> <!-- winHandles.WindowHandeling -->
+      </class> <!-- parallelExecutionLearn.OrangeHRMApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

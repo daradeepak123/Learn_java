@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Calendar;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -27,7 +28,7 @@ public class Excel_write_new {
 	      XSSFRow row;
 	      
 	      
-	      spreadsheet = workbook.createSheet();
+	     // spreadsheet = workbook.createSheet();
 			row = spreadsheet.createRow(0);
 			row.createCell(0).setCellValue("TestStatus");
 			row.createCell(1).setCellValue("Script");
@@ -41,8 +42,10 @@ public class Excel_write_new {
 
 			row.createCell(5).setCellValue(4);
 					
-	      
-	      FileOutputStream out = new FileOutputStream(new File("Writesheet1.xlsx"));
+
+	        long timeStamp = Calendar.getInstance().getTime().getTime();
+	        String path="C:\\Work\\Writesheet2"+timeStamp+".xlsx";
+	      FileOutputStream out = new FileOutputStream(new File(path));
 	      workbook.write(out);
 	      out.close();
 	      System.out.println("Writesheet.xlsx written successfully");
