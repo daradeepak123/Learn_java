@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gridLearn.GridTrail">
+      <class name="parallelExecutionLearn.OrangeHRMApp">
         <methods>
-          <include name="testGrid"/>
+          <include name="dPicker"/>
         </methods>
-      </class> <!-- gridLearn.GridTrail -->
+      </class> <!-- parallelExecutionLearn.OrangeHRMApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
