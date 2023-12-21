@@ -27,6 +27,8 @@ public class GridTrail {
 		
 		
 		
+		System.out.println();
+		
 		//{"browserName":"chrome","goog:chromeOptions":{"args":["--remote-allow-origins=*"]},"platformName":"Windows 11"}
 		
 		
