@@ -29,7 +29,7 @@ public class InnoPreFix {
 		//System.out.println(hashMap);
 		for(Map.Entry e: hashMap.entrySet())
 		{
-			//System.out.println(e.getKey() +" " + e.getValue());
+			System.out.println(e.getKey() +" " + e.getValue());
 			
 			
 			

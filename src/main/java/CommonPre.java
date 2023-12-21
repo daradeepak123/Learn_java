@@ -28,7 +28,7 @@ public class CommonPre {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String[] strs = {"apple", "app", "application"};
+		String[] strs = {"apple", "mappleee", "application"};
 		String commonPrefix = findCommonPrefix(strs);
 		System.out.println("Common Prefix: " + commonPrefix);
 
