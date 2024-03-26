@@ -27,7 +27,7 @@ public class API_Put_call {
 	  //Request paylaod sending along with post request
 	  JSONObject requestParams=new JSONObject();
 	  
-	  requestParams.put("name","Suresh010101");
+	  requestParams.put("name","Deepak");
 	  requestParams.put("salary","500000");
 	  requestParams.put("age","31");
 	  

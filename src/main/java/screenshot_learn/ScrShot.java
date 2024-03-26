@@ -26,12 +26,24 @@ public class ScrShot {
 	        driver.manage().window().maximize();
 	        driver.get("https://demoqa.com");	        
 	        long timeStamp = Calendar.getInstance().getTime().getTime();
+	        	
+	        
+	        String title=driver.getTitle();
+	        if(title.equals("abc"))
+	        {
+	        	System.out.println("Test case pass");
+	        }
+	        else
+	        {
+	        	System.out.println("Test case fail"); 
+	        	File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		        Files.copy(file, new File(System.getProperty("user.dir")+"\\srcshots"+timeStamp+".png"));
+		        //C:\Users\darad\eclipse-workspace\Learn_java
+	        }
 	        
 	        
 	        System.out.println(timeStamp);
-	        File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	        Files.copy(file, new File(System.getProperty("user.dir")+"\\srcshots"+timeStamp+".png"));
-
+	        
 	        driver.quit();
 	}
 

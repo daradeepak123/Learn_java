@@ -8,11 +8,6 @@
           <include name="dPicker"/>
         </methods>
       </class> <!-- parallelExecutionLearn.PHPTravel -->
-      <class name="parallelExecutionLearn.OrangeHRMApp">
-        <methods>
-          <include name="dPicker"/>
-        </methods>
-      </class> <!-- parallelExecutionLearn.OrangeHRMApp -->
     </classes>
   </test> <!-- Test2(failed) -->
   <test thread-count="10" parallel="methods" name="Test1(failed)">
@@ -22,11 +17,6 @@
           <include name="dPicker"/>
         </methods>
       </class> <!-- parallelExecutionLearn.PHPTravel -->
-      <class name="parallelExecutionLearn.OrangeHRMApp">
-        <methods>
-          <include name="dPicker"/>
-        </methods>
-      </class> <!-- parallelExecutionLearn.OrangeHRMApp -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -9,7 +9,7 @@ public class BasicString {
 		String str="Learn Java";
 		
 		System.out.println(str.offsetByCodePoints(2, 4));
-		System.out.println(str.repeat(2));
+		//System.out.println(str.repeat(2));
 		System.out.println(str.replace('a', 'r'));
 		System.out.println(str.replaceFirst("ar", "rr"));
 		System.out.println(str.startsWith("Le"));
