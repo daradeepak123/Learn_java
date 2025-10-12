@@ -9,7 +9,7 @@ public class LargestAndSmallestWord {
 		String str="this is java program and find small and largesttt word";
 		String s[]=str.split(" ");
 		int length=0;
-		String maxString="";
+		String maxString=" ";
 		for(int i=0;i<s.length;i++)
 		{
 			

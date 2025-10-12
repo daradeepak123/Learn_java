@@ -38,7 +38,7 @@ public class Screenshot_element {
 			//File DestFile=new File((System.getProperty("user.dir")+ "\\Screenshot_normal"  +timeStamp + ".png"));   // where the screen shot should go
 			
 			
-			File DestFile=new File(("C:\\Work\\Screenshots\\" +timeStamp + ".png"));   // where the screen shot should go
+			File DestFile=new File(("C:\\Work\\Screenshots\\"+ "name"+timeStamp + ".png"));   // where the screen shot should go
 			
 			
 			//C:\Users\darad\eclipse-workspace\Learn_java\Screenshot_normal

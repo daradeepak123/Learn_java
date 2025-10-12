@@ -6,6 +6,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
 
+
 <build> 
 <plugins> 
 <plugin>
@@ -137,7 +138,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.17.0</version>
+    <version>4.33.0</version>
 </dependency>
 
 
@@ -145,7 +146,7 @@
 
 <groupId>org.apache.poi</groupId> 
 <artifactId>poi-ooxml</artifactId>
- <version>3.12</version>
+ <version>5.2.3</version>
  </dependency>
  
  <dependency>
@@ -179,6 +180,11 @@
     <artifactId>mssql-jdbc</artifactId>
     <version>6.1.0.jre8</version>
 </dependency>
+ <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.15.2</version>
+    </dependency>
 
 
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -211,6 +217,8 @@
 
 
  <properties>
+  	<maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
 	<mail.version>1.6.2</mail.version>
 	<!-- like mail.version, but with underscores instead of dots -->
 	<mail.zipversion>1_6_2</mail.zipversion>

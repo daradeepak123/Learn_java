@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T08:08:07 IST" name="Default suite" finished-at="2024-03-25T08:08:10 IST" duration-ms="2989">
+  <suite started-at="2025-09-24T08:45:04 IST" name="Default suite" finished-at="2025-09-24T08:45:06 IST" duration-ms="2071">
     <groups>
     </groups>
-    <test started-at="2024-03-25T08:08:07 IST" name="Default test" finished-at="2024-03-25T08:08:10 IST" duration-ms="2989">
-      <class name="rest_assured_learn.Api_get_call_learn">
-        <test-method is-config="true" signature="auth()[pri:0, instance:rest_assured_learn.Api_get_call_learn@4d5d943d]" started-at="2024-03-25T08:08:07 IST" name="auth" finished-at="2024-03-25T08:08:07 IST" duration-ms="10" status="PASS">
+    <test started-at="2025-09-24T08:45:04 IST" name="Default test" finished-at="2025-09-24T08:45:06 IST" duration-ms="2071">
+      <class name="dataBaseWorkOut.DBWorkOut">
+        <test-method signature="dbTest()[pri:0, instance:dataBaseWorkOut.DBWorkOut@37271612]" started-at="2025-09-24T08:45:04 IST" name="dbTest" finished-at="2025-09-24T08:45:06 IST" duration-ms="2012" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- auth -->
-        <test-method signature="get_calls()[pri:0, instance:rest_assured_learn.Api_get_call_learn@4d5d943d]" started-at="2024-03-25T08:08:07 IST" name="get_calls" finished-at="2024-03-25T08:08:10 IST" duration-ms="2947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_calls -->
-      </class> <!-- rest_assured_learn.Api_get_call_learn -->
+        </test-method> <!-- dbTest -->
+      </class> <!-- dataBaseWorkOut.DBWorkOut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

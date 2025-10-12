@@ -1,6 +1,7 @@
 package sel_Excel;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -19,7 +20,7 @@ public class SelDataInject extends ReadCreds{
 		
 		WebDriver driver=new EdgeDriver(); 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 

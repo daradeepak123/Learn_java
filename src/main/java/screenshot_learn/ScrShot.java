@@ -24,9 +24,9 @@ public class ScrShot {
 	        WebDriver driver = new EdgeDriver();
 
 	        driver.manage().window().maximize();
-	        driver.get("https://demoqa.com");	        
+	        driver.get("https://google.com");	        
 	        long timeStamp = Calendar.getInstance().getTime().getTime();
-	        	
+	        	System.out.println(timeStamp);
 	        
 	        String title=driver.getTitle();
 	        if(title.equals("abc"))
@@ -37,7 +37,8 @@ public class ScrShot {
 	        {
 	        	System.out.println("Test case fail"); 
 	        	File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		        Files.copy(file, new File(System.getProperty("user.dir")+"\\srcshots"+timeStamp+".png"));
+		        Files.copy(file, new File(System.getProperty("user.dir")+"\\Screenshot_normal\\srcshots"+timeStamp+".png"));
+		        System.out.println(System.getProperty("user.dir"));
 		        //C:\Users\darad\eclipse-workspace\Learn_java
 	        }
 	        

@@ -16,20 +16,22 @@ public class API_Put_call {
 	 @Test
 	 void RegistrationSuccessful()
 	 {
+		 
 	  
 	  //Specify base URI
 	  RestAssured.baseURI="https://dummy.restapiexample.com/api/v1";
 	  
 	  //Request object
-	  RequestSpecification httpRequest=RestAssured.given();
-	  
-	   
-	  //Request paylaod sending along with post request
+	  RequestSpecification httpRequest = RestAssured.given().header("x-api-key", "reqres-free-v1");
+			 
+	    
+	//Request paylaod sending along with post request
 	  JSONObject requestParams=new JSONObject();
 	  
 	  requestParams.put("name","Deepak");
 	  requestParams.put("salary","500000");
 	  requestParams.put("age","31");
+	 
 	  
 	  
 	  httpRequest.header("Content-Type","application/json");

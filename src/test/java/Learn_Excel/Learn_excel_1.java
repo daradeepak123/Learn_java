@@ -60,24 +60,17 @@ public class Learn_excel_1 {
 			while(celliterator.hasNext())
 			{
 				Cell cell=celliterator.next();
-				switch (cell.getCellType())
-				{
-				case Cell.CELL_TYPE_STRING:
-				{
-					System.out.print(cell.getStringCellValue() + "\t\t\t");
-					break;
-				}
-				case Cell.CELL_TYPE_NUMERIC:
-				{
-					System.out.print(cell.getNumericCellValue() + "\t\t\t");
-					break;
-				}
-				default:
-				{
-					
-				}
-				
-				}
+				switch (cell.getCellType()) {  
+			    case STRING:    // field that represents string cell type  
+			        System.out.print(cell.getStringCellValue() + "\t\t\t");  
+			        break;  
+			    case NUMERIC:   // field that represents numeric cell type  
+			        System.out.print(cell.getNumericCellValue() + "\t\t\t");  
+			        break;  
+			    default:  
+			        // optional: handle BOOLEAN, FORMULA, BLANK, ERROR
+			        break;
+			}
 				
 			}
 			System.out.println("");

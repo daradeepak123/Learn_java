@@ -19,7 +19,10 @@ public class SQLConnectionQuery {
 	public void sqlExecution()
 	{
 		try {
-		Connection con=DriverManager.getConnection("jdbc:sqlserver://sql5106.site4now.net","DB_aa2489_n4605_1_admin","secure*12");
+		//Connection con=DriverManager.getConnection("jdbc:sqlserver://sql5106.site4now.net","DB_aa2489_n4605_1_admin","secure*12");
+		Connection con = DriverManager.getConnection("jdbc:sqlserver://DESKTOP-CTNIRRU","DESKTOP-CTNIRRU\\darad","");
+		//Connection con = DriverManager.getConnection("jdbc:sqlserver://16.0.1000.6","DESKTOP-CTNIRRU\\darad","");
+			
 		Statement stm=con.createStatement();  //sql5106.site4now.net  //sql5104.site4now.net
 		ResultSet rs=stm.executeQuery("select * from db_aa2489_n4605_1.. Currency c \r\n"
 				+ "inner join  Country cc on cc.id=c.id");

@@ -3,6 +3,7 @@ package seliniumdemo;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -23,10 +24,10 @@ public class ExcelAppRun {
 	@BeforeClass
 	public void setUp() throws Exception {
 		//System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@AfterClass
@@ -38,7 +39,7 @@ public class ExcelAppRun {
 	@Test
 	public void test() {
 		try {
-			File file=new File(System.getProperty("user.dir")+"\\Excel_docs\\Untitledspreadsheet.xlsx");
+			File file=new File(System.getProperty("user.dir")+"\\src\\main\\resources\\Untitledspreadsheet.xlsx");
 			FileInputStream fis=new FileInputStream(file);
 			XSSFWorkbook wb=new XSSFWorkbook(fis);
 			XSSFSheet sheet=wb.getSheet("vb");
